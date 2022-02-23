@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #fff;
+}
+.navbar-brand img {
+  width: 90px;
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #17ad61;
+}
+.navbar-nav .nav-item .sign-in {
+  background-color: #17ad61;
+  color: #fff102;
+  border-radius: 5px;
+}
+.dropdown-item {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #17ad61;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #0062cc;
+}

@@ -1,0 +1,17 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 20px auto;
+  /* border: 2px solid #808080; */
+}
+.news-container img {
+  width: 90px;
+  height: 60px;
+  margin: 10px;
+}
+.news-container article {
+  display: flex;
+  border-bottom: 3px solid #17ad61;
+  padding: 20px;
+}
