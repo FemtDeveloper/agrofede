@@ -1,0 +1,11 @@
+.external-links-container {
+  background-color: #17ad61;
+  /* margin: 10px; */
+  padding: 20px;
+  /* border-radius: 10px; */
+}
+.external-links-container a {
+  text-decoration: none;
+  color: #fbfbfb;
+  text-align: left;
+}
