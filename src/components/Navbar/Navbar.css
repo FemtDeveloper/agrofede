@@ -38,10 +38,13 @@
 }
 @media screen and (min-width: 576px) {
   .navbar-container {
+    position: absolute;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+    background-color: #000000a6;
+    z-index: 99;
   }
   .navbar-item-container {
     width: 100%;
@@ -50,7 +53,7 @@
     background-color: transparent;
   }
   .navbar-brand img {
-    width: 100px;
+    width: 250px;
   }
 
   .mobile-navbar .nav-item .nav-link {
