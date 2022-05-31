@@ -53,7 +53,7 @@
     background-color: transparent;
   }
   .navbar-brand img {
-    width: 250px;
+    width: 170px;
   }
 
   .mobile-navbar .nav-item .nav-link {
@@ -64,7 +64,7 @@
   }
   .navbar-item-container .nav-item .sign-in {
     color: #fdc82c;
-    background-color: #17ad61;
+    background-color: #009910;
     border-radius: 5px;
   }
 }

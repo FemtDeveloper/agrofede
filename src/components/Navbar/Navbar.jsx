@@ -63,12 +63,12 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to="/registro" className="nav-link ">
-              Registrarse
+              Iniciar sesión
             </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link sign-in" href="#">
-              Iniciar Sesión
+              AFILIACIONES
             </a>
           </li>
         </ul>
