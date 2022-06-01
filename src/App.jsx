@@ -6,6 +6,7 @@ import Register from "./components/Register/Register";
 import Home from "./components/Home/Home";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+                    <Route path="/" element={<Home />}></Route>
           <Route path="/registro" element={<Register />}></Route>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import index_1 from "../../assets/imgs/index_1.jpg";
+import primera from "../../assets/imgs/primera.jpg";
 import sacha_index from "../../assets/imgs/sacha_index.jpg";
 import cultivo from "../../assets/imgs/cultivo-tomates.webp";
 import tractor from "../../assets/imgs/tractor.webp";
@@ -25,7 +25,7 @@ const Carousel = () => {
         <div className="carousel-item active">
           <img
             className="d-block w-100 h-80"
-            src={index_1}
+            src={primera}
             alt="First slide"
           />
         </div>
