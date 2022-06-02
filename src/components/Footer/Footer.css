@@ -44,6 +44,6 @@ p {
 @media screen and (min-width: 720px) {
   .footer-container {
     flex-direction: row;
-    background-color: rgb(211, 11, 11);
+    background-color: rgb(210, 255, 8);
   }
 }
