@@ -1,4 +1,5 @@
 import React from "react";
+import "./Anuncios.css";
 
 const Anouncements = () => {
   return (
