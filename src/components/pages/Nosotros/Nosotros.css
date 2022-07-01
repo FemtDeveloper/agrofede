@@ -1,0 +1,23 @@
+.nosotros-container article {
+  margin: 0 0 10px;
+  padding: 20px;
+}
+.nosotros-container article:nth-child(even) {
+  background-color: #17ad61;
+  color: #fff;
+}
+article:nth-child(even) h2 {
+  color: #fff;
+}
+
+.nosotros-container h2 {
+  color: #00974a;
+  font-weight: 600;
+}
+
+.nosotros-container img {
+  width: 140px;
+}
+.nosotros-container p {
+  text-align: justify;
+}

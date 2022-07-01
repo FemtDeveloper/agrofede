@@ -11,6 +11,7 @@ const External = () => {
           <h4>Lineas Especiales de Credito Finagro</h4>
           <p>Financia tus actividades con tasas de crédito preferenciales</p>
         </article>
+        <article></article>
       </a>
     </div>
   );

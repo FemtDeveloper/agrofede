@@ -19,7 +19,7 @@ const Footer = () => {
           <p>3228386159</p>
         </div>
       </div>
-      <div>
+      <div className="mail-container">
         <FiMail />
         <p>direcciongeneral@fenagro.com.co</p>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/imgs/logo-new.png";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
@@ -25,15 +26,19 @@ const Navbar = () => {
               Nosotros
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link className="dropdown-item" to="/nosotros">
+              <HashLink className="dropdown-item" smooth to="/nosotros#mision">
                 Misión
-              </Link>
-              <a className="dropdown-item" href="#">
+              </HashLink>
+              <HashLink className="dropdown-item" smooth to="/nosotros#vision ">
                 Visión
-              </a>
-              <a className="dropdown-item" href="#">
+              </HashLink>
+              <HashLink
+                className="dropdown-item"
+                smooth
+                to="/nosotros#objetivos"
+              >
                 Objetivos
-              </a>
+              </HashLink>
             </div>
           </li>
           <li className="nav-item dropdown">
@@ -55,21 +60,20 @@ const Navbar = () => {
               <a className="dropdown-item" href="#">
                 Información
               </a>
-              <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">
-                Something else here
+                Aliados
               </a>
             </div>
           </li>
           <li className="nav-item">
-            <Link to="/registro" className="nav-link ">
+            <Link to="/ingresar" className="nav-link ">
               Iniciar sesión
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link sign-in" href="#">
+            <Link to="/registro" className="nav-link sign-in">
               AFILIACIONES
-            </a>
+            </Link>
           </li>
         </ul>
         {/* <form className="form-inline my-2 my-lg-0">

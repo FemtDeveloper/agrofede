@@ -4,6 +4,7 @@ import "./Register.css";
 const Register = () => {
   return (
     <div className="form-container">
+      <h2>Rellena estos campos</h2>
       <form>
         <div class="form-row">
           <div class="form-group col-md-6">

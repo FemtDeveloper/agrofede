@@ -9,3 +9,13 @@
   color: #fbfbfb;
   text-align: left;
 }
+
+@media screen and (min-width: 720px) {
+  .external-links-container h4 {
+    font-size: 32px;
+  }
+
+  .external-links-container p {
+    font-size: 22px;
+  }
+}
