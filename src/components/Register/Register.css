@@ -1,3 +1,23 @@
 .form-container {
-  margin: 2rem 0.4rem;
+  margin: 0 30px;
+  /* background-color: #ebebeb; */
+}
+.form-container :is(label, input, button) {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+.form-container button {
+  color: #fafafa;
+}
+
+@media screen and (min-width: 576px) {
+  .form-container {
+    padding-top: 240px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .form-container {
+    padding-top: 120px;
+  }
 }

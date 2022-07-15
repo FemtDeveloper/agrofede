@@ -2,56 +2,58 @@ import React from "react";
 import "./Register.css";
 
 const Register = () => {
+  const uploadForm = () => {};
+
   return (
     <div className="form-container">
-      <h2>Rellena estos campos</h2>
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
+      <h2>Brindanos tus datos</h2>
+      <form onSubmit={uploadForm}>
+        <div className="form-row">
+          <div className="form-group col-md-6">
+            <label htmlFor="inputEmail4">Email</label>
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="inputEmail4"
               placeholder="Email"
             />
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Contraseña</label>
+          <div className="form-group col-md-6">
+            <label htmlFor="inputPassword4">Contraseña</label>
             <input
               type="password"
-              class="form-control"
+              className="form-control"
               id="inputPassword4"
               placeholder="Contraseña"
             />
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Dirección</label>
+        <div className="form-group">
+          <label htmlFor="inputAddress">Dirección</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="inputAddress"
             placeholder="Calle, Carrera..."
           />
         </div>
-        <div class="form-group">
-          <label for="inputAddress2">Indicación (opcional)</label>
+        <div className="form-group">
+          <label htmlFor="inputAddress2">Indicación (opcional)</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="inputAddress2"
             placeholder="..."
           />
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity" />
+        <div className="form-row">
+          <div className="form-group col-md-6">
+            <label htmlFor="inputCity">Ciudad</label>
+            <input type="text" className="form-control" id="inputCity" />
           </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">Departamento</label>
-            <select id="inputState" class="form-control">
+          <div className="form-group col-md-4">
+            <label htmlFor="inputState">Departamento</label>
+            <select id="inputState" className="form-control">
               <option value=""> </option>
               <option value="Amazonas">Amazonas</option>
               <option value="Antioquia">Antioquia</option>
@@ -89,20 +91,9 @@ const Register = () => {
               <option value="Vichada">Vichada</option>
             </select>
           </div>
-          {/* <div class="form-group col-md-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip" />
-        </div> */}
         </div>
-        {/* <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div> */}
-        <button type="submit" class="btn btn-primary">
+
+        <button type="submit" className="btn btn-primary btn-md">
           Registrarse
         </button>
       </form>
