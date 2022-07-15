@@ -1,14 +1,24 @@
 .form-container {
   margin: 0 30px;
   /* background-color: #ebebeb; */
+  margin-bottom: 20px;
 }
-.form-container :is(label, input, button) {
-  font-size: 22px;
+.form-container :is(label, input, button, select) {
+  font-size: 20px;
   font-weight: 500;
   color: #1b1b1b;
 }
 .form-container button {
   color: #fafafa;
+}
+.sended {
+  text-align: center;
+  width: 220px;
+  margin: 10px auto;
+  padding: 2px 5px;
+  background-color: #2eb02e;
+  color: #fafafa;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 576px) {

@@ -19,6 +19,7 @@
 .news-container article {
   font-size: 24px;
   display: flex;
+  justify-content: center;
   border-bottom: 3px solid #ffffff;
   padding: 20px 0;
   width: 100%;

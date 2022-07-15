@@ -1,8 +1,27 @@
 import React from "react";
+import { useState } from "react";
+import { useForm } from "../../hooks/useForm";
 import "./Register.css";
 
 const Register = () => {
-  const uploadForm = () => {};
+  const [showalert, setShowalert] = useState(false);
+  const { formState, onInputChange, onResetForm } = useForm({
+    email: "",
+    password: "",
+    address: "",
+    indications: "",
+    city: "",
+    department: "",
+  });
+  const { email, password, address, indications, city, department } = formState;
+
+  const uploadForm = (e) => {
+    e.preventDefault();
+    setShowalert(true);
+    setTimeout(() => {
+      setShowalert(false);
+    }, 2000);
+  };
 
   return (
     <div className="form-container">
@@ -16,6 +35,10 @@ const Register = () => {
               className="form-control"
               id="inputEmail4"
               placeholder="Email"
+              name="email"
+              onChange={onInputChange}
+              value={email}
+              required
             />
           </div>
           <div className="form-group col-md-6">
@@ -25,6 +48,10 @@ const Register = () => {
               className="form-control"
               id="inputPassword4"
               placeholder="Contraseña"
+              name="password"
+              onChange={onInputChange}
+              value={password}
+              required
             />
           </div>
         </div>
@@ -33,27 +60,48 @@ const Register = () => {
           <input
             type="text"
             className="form-control"
-            id="inputAddress"
+            id="address"
             placeholder="Calle, Carrera..."
+            name="address"
+            onChange={onInputChange}
+            value={address}
+            required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="inputAddress2">Indicación (opcional)</label>
+          <label htmlFor="indications">Indicación (opcional)</label>
           <input
             type="text"
             className="form-control"
-            id="inputAddress2"
+            id="indications"
             placeholder="..."
+            name="indications"
+            onChange={onInputChange}
+            value={indications}
           />
         </div>
         <div className="form-row">
           <div className="form-group col-md-6">
             <label htmlFor="inputCity">Ciudad</label>
-            <input type="text" className="form-control" id="inputCity" />
+            <input
+              type="text"
+              className="form-control"
+              id="city"
+              name="city"
+              onChange={onInputChange}
+              value={city}
+              required
+            />
           </div>
           <div className="form-group col-md-4">
             <label htmlFor="inputState">Departamento</label>
-            <select id="inputState" className="form-control">
+            <select
+              id="inputState"
+              className="form-control"
+              name="department"
+              onChange={onInputChange}
+              value={department}
+            >
               <option value=""> </option>
               <option value="Amazonas">Amazonas</option>
               <option value="Antioquia">Antioquia</option>
@@ -92,8 +140,17 @@ const Register = () => {
             </select>
           </div>
         </div>
+        {showalert && (
+          <div className="sended">
+            <h6>Fromulario enviado</h6>
+          </div>
+        )}
 
-        <button type="submit" className="btn btn-primary btn-md">
+        <button
+          type="submit"
+          className="btn btn-primary btn-md"
+          onClick={onResetForm}
+        >
           Registrarse
         </button>
       </form>
