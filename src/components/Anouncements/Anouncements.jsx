@@ -7,9 +7,9 @@ const Anouncements = () => {
   return (
     <div className="anouncements-container">
       <article>
-        <h2>FONDO DEL FOMENTO AGROPECUARIO</h2>
+        <h3>Fondo Nacional Del Fomento Agropecuario</h3>
         <p>
-          El Fondo de Fomento Agropecuario impulsa las actividades que
+          El Fondo Nacional de Fomento Agropecuario impulsa las actividades que
           contribuyan al fomento del desarrollo del Sector Agropecuario,
           Pesquero, de Acuicultura y de Desarrollo Rural.{" "}
           {isActive && (
